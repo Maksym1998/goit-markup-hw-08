@@ -1,0 +1,119 @@
+.footer {
+  background-color: var(--background-color-2);
+}
+
+.footer-contain {
+  display: flex;
+}
+
+.footer__logo {
+  color: var(--color-2);
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.footer__address {
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+.footer-address__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-2);
+}
+
+.footer-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-list__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-soc__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-soc {
+  padding-top: 72px;
+
+  margin-left: 60px;
+}
+.footer-soc__link {
+  background: rgba(255, 255, 255, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-soc__icon {
+  color: #ffffff;
+}
+
+.footer-input {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-inputs {
+  padding-top: 72px;
+  margin-left: 93px;
+}
+
+.footer-input__form {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.footer-input__button {
+  padding-left: 29px;
+
+  text-align: left;
+  position: relative;
+}
+
+.footer-input__button-icon {
+  fill: #ffffff;
+
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translate(-50%, -50%);
+}
+
+.footer-input__title {
+  text-align: left;
+}

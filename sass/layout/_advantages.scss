@@ -1,0 +1,32 @@
+.adv__icon {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+}
+
+.adv__icon-bg {
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.adv-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 4px;
+}
+
+.adv__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.adv__item-title {
+  text-transform: uppercase;
+}
+
+.adv__item-text {
+  margin-top: 10px;
+  width: 270px;
+  min-height: 75px;
+}
