@@ -2,20 +2,39 @@
   background-color: var(--background-color-2);
 }
 
+.tablet-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer-contain {
-  display: flex;
+  // display: flex;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .footer__logo {
   color: var(--color-2);
   display: block;
-  padding-top: 60px;
+
   padding-bottom: 0;
 }
 
 .footer__address {
   margin-top: 20px;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
 }
 
 .footer-address__link {
@@ -47,9 +66,16 @@
 }
 
 .footer-soc {
-  padding-top: 72px;
+  // padding-top: 72px;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 80px;
+  }
 
-  margin-left: 60px;
+  // margin-left: 80px;
 }
 .footer-soc__link {
   background: rgba(255, 255, 255, 0.1);
@@ -60,17 +86,22 @@
 }
 
 .footer-input {
-  display: flex;
+  // display: flex;
   margin-top: 20px;
 }
 
 .footer-inputs {
-  padding-top: 72px;
-  margin-left: 93px;
+  // padding-top: 72px;
+  // margin-left: 93px;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 93px;
+  }
 }
 
 .footer-input__form {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -81,6 +112,12 @@
   font-size: 16px;
   line-height: 1.87;
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .button {
@@ -102,7 +139,9 @@
   padding-left: 29px;
 
   text-align: left;
+
   position: relative;
+  margin-top: 20px;
 }
 
 .footer-input__button-icon {
@@ -115,5 +154,6 @@
 }
 
 .footer-input__title {
-  text-align: left;
+  // text-align: left;
+  text-align: center;
 }

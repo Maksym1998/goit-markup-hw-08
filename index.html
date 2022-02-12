@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-  <header class="header">
+  <!-- <header class="header">
       <div class="container header__container">
          <a  class="logo header__logo link" href="./index.html" lang="en"><span class="logo-span">Web</span>Studio</a>
          <nav class="header-nav ">
@@ -63,7 +63,7 @@
             </li>
          </ul>
       </div>
-  </header>
+  </header> -->
   <main>
       <section class="hero">
           <div class=" hero__container">
@@ -73,7 +73,7 @@
       </section>
       <section class="adv">
           <div class="container">
-            <h2 class="visually-hidden"> наши преимущества</h2> <!-- потом убрать в сss-->
+            <h2 class="visually-hidden"> наши преимущества</h2> 
             
             <ul class="list adv-list" >
                 <li class="adv__item">
@@ -100,7 +100,7 @@
                     <h3 class=" item-title adv__item-title">Пунктуальность</h3>
                    <p  class="item-text adv__item-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                </li>
-                <li class="adv-item">
+                <li class="adv__item">
                     <div class="adv__icon-bg">
                         <svg class="adv__icon">
                             <use href=images/icons.svg#icon-diagram-1>
@@ -110,7 +110,7 @@
                     <h3 class=" item-title adv__item-title">Планирование</h3>
                     <p class="item-text adv__item-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                </li>
-                <li class="adv-item">
+                <li class="adv__item">
                     <div class="adv__icon-bg">
                         <svg class="adv__icon">
                         <use href=images/icons.svg#icon-astronaut-1>
@@ -124,7 +124,7 @@
             </ul>
           </div>
      </section> 
-     <section class="works">
+     <!-- <section class="works">
          <div class="container works__container">
             <h2 class=" title works-title">Чем мы занимаемся</h2>
          
@@ -148,7 +148,7 @@
         </ul>
         
         </div>
-     </section> 
+     </section>  -->
      <section class="team">
         <div class="container team__container">
          <h2 class=" title team__title">Наша команда</h2>
@@ -370,6 +370,7 @@
     <footer class="footer">
        <div class="container footer__container">
            <div class="footer-contain">
+               <div class="tablet-footer">
          <div class="footer-nav"> 
            
             <a  class="footer__logo logo link" href="" lang="en"><span class="logo-span">Web</span>Studio</a>
@@ -426,6 +427,7 @@
                 </li>
             </ul>
          </div>
+        </div>
          <div class="footer-inputs">
              <h3 class="footer-soc__title footer-input__title">Подпишитесь на рассылку</h3>
             <form action="#">
@@ -522,7 +524,7 @@
                                  id="user-text"
                                  placeholder="Введите текст"></textarea> 
                         </div>
-                        <div class="form-field " >
+                        <div class="form-field form-field-check" >
                           <input type="checkbox" name="policy" id="policy" class="policy-check visually-hidden">
                           <label class="check-text" for="policy">
                             Соглашаюсь с рассылкой и принимаю
