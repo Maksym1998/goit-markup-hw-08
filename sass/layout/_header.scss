@@ -29,6 +29,10 @@
   @media screen and (min-width: 768px) {
     display: contents;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-span {
@@ -104,6 +108,15 @@
   &:hover {
     color: #2196f3;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-contact__link {
@@ -123,20 +136,26 @@
   &:hover {
     color: #2196f3;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
 }
 
 .header-contact-mail {
-  margin-bottom: 10px;
-  padding-top: 21px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }
 
-.header-contact-tel {
-  padding-bottom: 21px;
-}
+// .header-contact-tel {
+
+// }
 
 .curent {
   color: #2196f3;
   position: relative;
+
   &::after {
     content: "";
     width: 100%;
@@ -171,6 +190,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.menu-close-icon {
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .mob-menu {

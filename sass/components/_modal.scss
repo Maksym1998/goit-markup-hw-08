@@ -8,8 +8,10 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  // width: 528px;
+  max-height: 528px;
+  width: 100%;
+
   background-color: var(--background-color-main);
   position: absolute;
   top: 50%;
@@ -17,6 +19,9 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
   padding: 40px;
+  @media screen and (min-width: 768px) {
+    max-width: 528px;
+  }
 }
 
 .backdrop.is-hidden.modal {
@@ -134,8 +139,13 @@
     width: 15px;
     border: 2px solid #000;
     border-radius: 2px;
-    margin-right: 7px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 7px;
+    }
   }
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .policy-check {
@@ -154,6 +164,8 @@
 }
 
 .form-field-check {
-  padding-left: 13px;
-  padding-right: 13px;
+  @media screen and (min-width: 1200px) {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }

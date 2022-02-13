@@ -154,6 +154,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .logo-span {
   color: #2196f3;
 }
@@ -230,6 +237,20 @@ body {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-nav__link {
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .header-contact__link {
   color: var(--color-main);
   font-weight: 500;
@@ -246,13 +267,17 @@ body {
   color: #2196f3;
 }
 
-.header-contact-mail {
-  margin-bottom: 10px;
-  padding-top: 21px;
+@media screen and (min-width: 768px) {
+  .header-contact__link {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
 }
 
-.header-contact-tel {
-  padding-bottom: 21px;
+@media screen and (min-width: 768px) {
+  .header-contact-mail {
+    margin-bottom: 10px;
+  }
 }
 
 .curent {
@@ -295,6 +320,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-opn-icon:hover, .menu-opn-icon:focus {
+  color: #2196f3;
+}
+
+.menu-close-icon {
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-icon:hover, .menu-close-icon:focus {
+  color: #2196f3;
 }
 
 .mob-menu {
@@ -891,8 +931,8 @@ body {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  max-height: 528px;
+  width: 100%;
   background-color: var(--background-color-main);
   position: absolute;
   top: 50%;
@@ -900,6 +940,12 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
   padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .backdrop.is-hidden.modal {
@@ -1012,6 +1058,8 @@ body {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .check-text::before {
@@ -1020,7 +1068,12 @@ body {
   width: 15px;
   border: 2px solid #000;
   border-radius: 2px;
-  margin-right: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .check-text::before {
+    margin-right: 7px;
+  }
 }
 
 .policy-check:checked + .check-text::before {
@@ -1036,13 +1089,16 @@ body {
   margin-left: 2px;
 }
 
-.form-field-check {
-  padding-left: 13px;
-  padding-right: 13px;
+@media screen and (min-width: 1200px) {
+  .form-field-check {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }
 
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-top: 94px;
   margin-bottom: 50px;
@@ -1054,6 +1110,15 @@ body {
 
 .button-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.activ {
+  color: #2196f3;
+}
+
+.active {
+  background-color: #2196f3;
+  color: var(--color-2);
 }
 
 .portfolio-button {

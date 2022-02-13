@@ -1,5 +1,6 @@
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-top: 94px;
   margin-bottom: 50px;
@@ -11,6 +12,15 @@
 
 .button-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.activ {
+  color: #2196f3;
+}
+
+.active {
+  background-color: #2196f3;
+  color: var(--color-2);
 }
 
 .portfolio-button {
