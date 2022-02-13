@@ -5,6 +5,10 @@
   margin-bottom: 50px;
 }
 
+.portfolio-container {
+  width: 100%;
+}
+
 .button-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -32,15 +36,28 @@
 }
 
 .examp-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .examp-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin: 15px;
+  // flex-basis: calc(100% / 3 - 30px);
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+  }
   border-bottom: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover .examp-item-p {

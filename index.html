@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-  <!-- <header class="header">
+  <header class="header">
       <div class="container header__container">
          <a  class="logo header__logo link" href="./index.html" lang="en"><span class="logo-span">Web</span>Studio</a>
          <nav class="header-nav ">
@@ -38,7 +38,7 @@
          </nav>
          <ul class="list header-contacts">
              <li class="header-contact__item">
-                 <a class="link header-contact__link" href="mailto:info@devstudio.com">
+                 <a class="link header-contact__link header-contact-mail" href="mailto:info@devstudio.com">
                      <svg class="header-contact__icon">
                          <use href="images/icons.svg#icon-envelope">
      
@@ -50,7 +50,7 @@
                  
              </li>
              <li>
-                 <a class="link header-contact__link" href="tel:+380961111111">
+                 <a class="link header-contact__link header-contact-tel" href="tel:+380961111111">
                      <svg class="header-contact__icon">
                         <use href="images/icons.svg#icon-smartphone">
   
@@ -62,8 +62,80 @@
                 
             </li>
          </ul>
+         <button type="button" class="menu-opn-btn" data-menu-open>
+            <svg class="menu-opn-icon">
+                <use href=./images/mob-line.svg#icon-menu_40px>
+                </use>
+            </svg>
+         </button>
       </div>
-  </header> -->
+      
+      <div class="mob-menu is-hidden mob-menu-container" data-menu>
+        <div class="mob-menu-up">
+        <button type="button" class="modal-close" data-menu-close>
+            <svg class="close-icon">
+                <use href=./images/symbol-defs.svg#icon-close-black-18dp-2-1>
+                </use>
+            </svg>
+        </button>
+        <ul class="list mob-menu-list">
+            <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link " href="./index.html">Студия</a>
+            </li>
+            <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link" href="">Контакты</a>
+            </li>
+        </ul>
+        </div>
+        <div class="mob-menu-down">
+        <ul class="list mob-menu-contacts">
+            <li class="mob-menu-contacts__item mob-link__item">
+                <a class="link mob-link mob-menu-contacts__link" href="mailto:info@devstudio.com">
+                    +38 096 111 11 11
+                  
+                </a>
+        
+            </li>
+            <li class="mob-menu-contacts__item">
+                <a class="link mob-menu-contacts__link" href="tel:+380961111111">
+                    
+                    
+                    info@devstudio.com
+                </a>
+        
+            </li>
+        </ul>
+        <ul class=" list mob-menu-soc">
+            <li class="mob-menu-soc-item">
+                <a class="link mob-menu-soc-link" href="">
+                    Instagram
+                </a>
+            </li>
+            <li class="mob-menu-soc-item">
+                <a class="link mob-menu-soc-link" href="">
+                   Twitter
+                </a>
+            </li>
+            <li class="mob-menu-soc-item">
+                <a class="link mob-menu-soc-link" href="">
+                   Facebook
+                </a>
+            </li>
+            <li class="mob-menu-soc-item">
+                <a class="link mob-menu-soc-link" href="">
+                  Linkedin
+                </a>
+            </li>
+        </ul>
+        </div>
+
+
+
+      </div>
+  </header>
   <main>
       <section class="hero">
           <div class=" hero__container">
@@ -124,7 +196,7 @@
             </ul>
           </div>
      </section> 
-     <!-- <section class="works">
+     <section class="works">
          <div class="container works__container">
             <h2 class=" title works-title">Чем мы занимаемся</h2>
          
@@ -148,7 +220,7 @@
         </ul>
         
         </div>
-     </section>  -->
+     </section> 
      <section class="team">
         <div class="container team__container">
          <h2 class=" title team__title">Наша команда</h2>
@@ -543,6 +615,7 @@
     </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   
  </body>
 </html>

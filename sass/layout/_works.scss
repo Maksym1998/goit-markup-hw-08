@@ -1,6 +1,12 @@
 .works__container {
   padding-bottom: 94px;
   padding-top: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: contents;
+  }
 }
 
 .works-list {
