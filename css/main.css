@@ -931,8 +931,8 @@ body {
 }
 
 .modal {
-  max-height: 528px;
-  width: 100%;
+  height: auto;
+  width: calc(100% - 30px);
   background-color: var(--background-color-main);
   position: absolute;
   top: 50%;
@@ -942,9 +942,17 @@ body {
   padding: 40px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+    min-height: 609px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1051,7 +1059,10 @@ body {
 
 .modal-button {
   position: absolute;
-  left: 164px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
 }
 
 .check-text {
@@ -1068,12 +1079,7 @@ body {
   width: 15px;
   border: 2px solid #000;
   border-radius: 2px;
-}
-
-@media screen and (min-width: 768px) {
-  .check-text::before {
-    margin-right: 7px;
-  }
+  margin-right: 7px;
 }
 
 .policy-check:checked + .check-text::before {
