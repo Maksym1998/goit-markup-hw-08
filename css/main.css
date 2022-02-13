@@ -1058,11 +1058,8 @@ body {
 }
 
 .modal-button {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
 }
 
 .check-text {
