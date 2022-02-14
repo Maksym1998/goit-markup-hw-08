@@ -24,7 +24,7 @@
     min-height: 609px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     max-width: 528px;
     min-height: 581px;
   }
@@ -149,6 +149,10 @@
   }
   font-size: 12px;
   line-height: 14px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy-check {
