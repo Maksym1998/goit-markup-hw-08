@@ -40,6 +40,9 @@
 .adv__item-title {
   text-transform: uppercase;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .adv__item-text {

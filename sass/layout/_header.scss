@@ -10,7 +10,7 @@
 .header__container {
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 }
 
@@ -23,17 +23,21 @@
   letter-spacing: 0.03em;
   color: var(--color-h);
   font-family: "Raleway", sans-serif;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   display: block;
   @media screen and (min-width: 768px) {
-    display: contents;
+    display: block;
   }
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
   }
 }
+
+// .header__logo {
+//   text-align: left;
+// }
 
 .logo-span {
   color: #2196f3;
@@ -48,7 +52,10 @@
 
 .header-nav-list {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
+  }
 }
 
 .header-nav__item:not(:last-child) {
@@ -65,7 +72,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    margin-left: 106px;
+    margin-left: 84px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -76,29 +83,37 @@
 }
 
 .header-contact__icon {
-  width: 20px;
-  height: 16px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: #2196f3;
   }
+  @media screen and (min-width: 1200px) {
+    width: 20px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 .header-contact__item {
   @media screen and (min-width: 768px) {
+    margin-right: 0px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
-  // margin-right: 50px;
+  //
 }
 
 .header-nav__link {
   color: var(--color-h);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   // padding-top: 32px;
   // padding-bottom: 32px;
@@ -110,20 +125,22 @@
   }
   @media screen and (min-width: 768px) {
     padding-top: 32px;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
 .header-contact__link {
   color: var(--color-main);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   // padding-top: 30px;
   // padding-bottom: 10px;
@@ -139,6 +156,12 @@
   @media screen and (min-width: 768px) {
     padding-top: auto;
     padding-bottom: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: auto;
+    padding-bottom: auto;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
